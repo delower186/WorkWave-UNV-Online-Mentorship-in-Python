@@ -78,6 +78,21 @@
 # else:
 #     print("Demand will rise for lowest in stock")
 
+students = {
+    "Galib": {
+        "Bangla": 79,
+        "English": 85
+    },
+    "Himel": {
+        "Bangla": 95,
+        "English": 76
+    },
+    "arman": {
+        "Bangla": 75,
+        "English": 76
+    }
+}
+
 
 rasel = {
     "Bangla" : 79,
@@ -91,12 +106,13 @@ gpa_scale = {
     "B+": range(50, 59)
 }
 
-def generate_gpa(numbers):
+def generate_gpa(name, numbers):
     total = numbers['Bangla'] + numbers['English']
 
     average = total / len(numbers)
+    average = int(average)
 
-    print(f"Overall Grade : {check_grade(average)}, Grade in Bangla: {check_grade(numbers['Bangla'])}, Grade in English: {check_grade(numbers['English'])}")
+    print(f"{name}'s Overall Grade : {check_grade(average)}, Grade in Bangla: {check_grade(numbers['Bangla'])}, Grade in English: {check_grade(numbers['English'])}")
 
 
 def check_grade(number):
@@ -111,11 +127,18 @@ def check_grade(number):
     else:
         return "FAiled"
 
-generate_gpa(rasel)
+# generate_gpa(rasel)
+
+# for student in students:
+#     generate_gpa(student, students[student])
 
 
+fruits =  ["apple", "banana", "cherry"]
 
-
-
-
-
+for fruit in fruits:
+    if fruit == "apple":
+        print(f"Please give a glass of {fruit} guice.")
+    elif fruit == "banana":
+        continue
+    elif fruit == "cherry":
+        print(f"Please give a plate of {fruit}.")
