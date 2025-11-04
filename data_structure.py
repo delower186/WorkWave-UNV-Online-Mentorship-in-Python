@@ -14,7 +14,7 @@ When choosing a collection type, it is useful to understand the properties of th
 """
 
 # list
-mylist = ["apple", "banana", "cherry"]
+mylist = ["apple", "banana", "cherry", "apple"]
 
 # # Accessing item
 # print(mylist[1])
@@ -24,6 +24,7 @@ mylist = ["apple", "banana", "cherry"]
 # # remove
 # mylist.remove("apple")
 # print(mylist)
+# append(), clear(), count(), len(), extend(), pop(), remove()
 
 
 # tuple
@@ -42,6 +43,8 @@ mytuple = ("apple", "banana", "cherry")
 # tupleList.remove("apple")
 # conTuple = tuple(tupleList)
 # print(conTuple)
+# count()
+print(mytuple.count("apple"))
 
 # set
 myset = {"apple", "banana", "cherry"}
@@ -56,6 +59,9 @@ myset = {"apple", "banana", "cherry"}
 # # Removing item
 # myset.remove("apple")
 # print(myset)
+# add(), clear(), pop(), remove()
+
+
 
 # dictionary
 thisdict = {
@@ -75,6 +81,16 @@ thisdict = {
 # thisdict.pop("model")
 # print(thisdict)
 
-print(thisdict["brand"])
+#print(thisdict["brand"])
+
+# clear(), get(), items(), pop(), keys(), values()
 
 
+def get_name():
+    return "delower"
+
+print(get_name())
+
+class human:
+    def get_name(self):
+        return "delower"

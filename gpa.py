@@ -1,3 +1,5 @@
+from data_structure import get_name
+
 # Dictionary
 # if, elif, else condtions
 # range
